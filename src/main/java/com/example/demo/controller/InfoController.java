@@ -11,8 +11,10 @@ public class InfoController {
 
 
     @RequestMapping("/getHa")
-    public String getHa(HttpServletRequest  request) {
-        System.out.println("-----------------------------"+request.getQueryString());
+    public String getHa(HttpServletRequest  request,Object object) {
+
+        System.out.println("object-----------------------------"+object);
+        System.out.println("request-----------------------------"+request.getQueryString());
         return "hard";
 
     }
