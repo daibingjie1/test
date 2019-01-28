@@ -10,7 +10,7 @@ public class InfoController {
 
     @RequestMapping("/getHa")
     public String getHa() {
-
+        System.out.println("-----------------------------");
         return "hard";
 
     }
