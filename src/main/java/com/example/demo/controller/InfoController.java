@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -13,15 +15,15 @@ public class InfoController {
 
     @RequestMapping("/getHa")
     @ResponseBody
-    public String getHa(HttpServletRequest  request, String str) {
+    public String getHa(HttpServletRequest  request, @RequestBody JSONObject object) {
 
-        System.out.println("object-----------------------------"+str);
+        System.out.println("object-----------------------------"+object);
 
 /*        if (object == null ) {
             return "没有数据";
         }*/
 
-        return str;
+        return "SB";
 
     }
 
