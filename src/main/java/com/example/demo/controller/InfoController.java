@@ -17,12 +17,12 @@ public class InfoController {
     public String getHa(HttpServletRequest  request, String str) {
 
         JSONObject object = new JSONObject();
-
+        System.out.println("object-----------------------------"+str);
         System.out.println("object-----------------------------"+object);
 
-        if (object == null ) {
+/*        if (object == null ) {
             return "没有数据";
-        }
+        }*/
 
         return str;
 
