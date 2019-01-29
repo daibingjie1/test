@@ -21,6 +21,7 @@ public class InfoController {
 
         System.out.println("object-----------------------------"+object);
 
+/*
         String param= null;
         try {
             BufferedReader streamReader = new BufferedReader( new InputStreamReader(request.getInputStream(), "UTF-8"));
@@ -35,10 +36,12 @@ public class InfoController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+*/
 
 
         return "SB";
 
     }
+
 
 }
