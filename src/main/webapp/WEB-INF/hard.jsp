@@ -4,6 +4,6 @@
 	<title>test</title>
 </head>
 <body>
-hard
+测试BOOT 打包
 </body>
 </html>
